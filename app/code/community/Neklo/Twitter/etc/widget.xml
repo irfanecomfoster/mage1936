@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+NOTICE OF LICENSE
+
+This source file is subject to the NekloEULA that is bundled with this package in the file ICENSE.txt.
+
+It is also available through the world-wide-web at this URL: http://store.neklo.com/LICENSE.txt
+
+Copyright (c)  Neklo (http://store.neklo.com/)
+-->
+<widgets>
+    <neklo_twitter type="neklo_twitter/widget_timeline" translate="label" module="neklo_twitter">
+        <name>[NEKLO] Twitter Timeline</name>
+        <parameters>
+            <is_enabled translate="label">
+                <label>Is Enabled</label>
+                <required>1</required>
+                <visible>1</visible>
+                <sort_order>10</sort_order>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <value>1</value>
+            </is_enabled>
+            <widget_html translate="label description">
+                <label>Widget HTML</label>
+                <description><![CDATA[Create a new timeline widget <a href="https://twitter.com/settings/widgets/new" target="_blank">here</a>]]></description>
+                <required>1</required>
+                <visible>1</visible>
+                <sort_order>20</sort_order>
+                <type>textarea</type>
+            </widget_html>
+            <template translate="label">
+                <label>Template</label>
+                <required>1</required>
+                <visible>1</visible>
+                <sort_order>30</sort_order>
+                <type>select</type>
+                <value>neklo/twitter/widget/timeline.phtml</value>
+                <values>
+                    <featured translate="label">
+                        <value>neklo/twitter/widget/timeline.phtml</value>
+                        <label>Twitter Timeline Template</label>
+                    </featured>
+                </values>
+            </template>
+        </parameters>
+    </neklo_twitter>
+</widgets>
