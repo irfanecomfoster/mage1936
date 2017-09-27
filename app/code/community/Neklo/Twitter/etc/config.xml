@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+NOTICE OF LICENSE
+
+This source file is subject to the NekloEULA that is bundled with this package in the file ICENSE.txt.
+
+It is also available through the world-wide-web at this URL: http://store.neklo.com/LICENSE.txt
+
+Copyright (c)  Neklo (http://store.neklo.com/)
+-->
+<config>
+    <modules>
+        <Neklo_Twitter>
+            <version>1.0.0</version>
+        </Neklo_Twitter>
+    </modules>
+    <global>
+        <blocks>
+            <neklo_twitter>
+                <class>Neklo_Twitter_Block</class>
+            </neklo_twitter>
+        </blocks>
+        <helpers>
+            <neklo_twitter>
+                <class>Neklo_Twitter_Helper</class>
+            </neklo_twitter>
+        </helpers>
+    </global>
+    <frontend>
+        <translate>
+            <modules>
+                <Neklo_Twitter>
+                    <files>
+                        <default>Neklo_Twitter.csv</default>
+                    </files>
+                </Neklo_Twitter>
+            </modules>
+        </translate>
+    </frontend>
+    <default>
+        <neklo_twitter>
+            <general>
+                <is_enabled>1</is_enabled>
+            </general>
+        </neklo_twitter>
+    </default>
+</config>
